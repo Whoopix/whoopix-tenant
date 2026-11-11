@@ -1,0 +1,13 @@
+# Deny direct web access to config and bootstrap (not HTTP endpoints)
+<Files "config.php">
+    Require all denied
+</Files>
+
+<Files "bootstrap.php">
+    Require all denied
+</Files>
+
+# Only allow POST to the endpoint files
+<FilesMatch "^(operation|read|upload|schema|backup)\.php$">
+    Require all granted
+</FilesMatch>

@@ -1,0 +1,1 @@
+{"slug":"press_videos","version":"2026-08-09-dynamic-module-v1","tables":{"mod_press_videos_list":{"id":"INT NOT NULL AUTO_INCREMENT","video_file":"VARCHAR(255) NULL","publication_date":"VARCHAR(32) NULL"},"mod_press_videos":{"id":"INT NOT NULL AUTO_INCREMENT","press_videos_id":"INT NULL","lang_id":"INT NULL","video_title":"VARCHAR(255) NULL","description":"MEDIUMTEXT NULL"}}}

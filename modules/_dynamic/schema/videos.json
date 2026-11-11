@@ -1,0 +1,1 @@
+{"slug":"videos","version":"2026-08-09-dynamic-module-v1","tables":{"mod_videos_list":{"id":"INT NOT NULL AUTO_INCREMENT","video_file":"VARCHAR(255) NULL","upload_date":"VARCHAR(32) NULL"},"mod_videos":{"id":"INT NOT NULL AUTO_INCREMENT","videos_id":"INT NULL","lang_id":"INT NULL","description":"MEDIUMTEXT NULL"}}}

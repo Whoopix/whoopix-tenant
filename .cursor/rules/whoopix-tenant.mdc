@@ -1,0 +1,15 @@
+---
+description: Whoopix hybrid tenant — build sites connected to Whoopix CMS
+globs:
+alwaysApply: true
+---
+
+This repo is a Whoopix **tenant front** (hybrid). The public site is PHP here; Whoopix CMS at cms.whoopix.ai manages content through `system/api` (HMAC sync).
+
+When building a website:
+- Put page chrome and templates in `templates/` and reuse `modules/`.
+- Prefer CMS-editable `mod_*` data over hard-coded copy.
+- Preserve `system/api` auth (`X-Sync-Client`, timestamp, HMAC signature).
+- Never commit `db.php`, `config.php`, `system/api/config.php`, or `.env`.
+
+Read `AGENTS.md` and `README.md` before large changes.
